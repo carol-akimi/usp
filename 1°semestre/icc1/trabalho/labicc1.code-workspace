@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../labicc1"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c"
+		}
+	}
+}

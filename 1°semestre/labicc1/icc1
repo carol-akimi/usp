@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void){
+    int A, B, C;
+    long long valor; 
+    scanf("%hu %hu %hu", &A, &B, &C);
+    valor += A; 
+    valor = (valor + B) << 16; 
+    valor = (valor +C) << 32; 
+    printf("%lld", valor);
+    return 0; 
+
+}

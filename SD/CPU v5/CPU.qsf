@@ -1,0 +1,127 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2021  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+# Date created = 14:56:59  September 19, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:56:59  SEPTEMBER 19, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_G18 -to HEXMEM0[0]
+set_location_assignment PIN_F22 -to HEXMEM0[1]
+set_location_assignment PIN_E17 -to HEXMEM0[2]
+set_location_assignment PIN_L26 -to HEXMEM0[3]
+set_location_assignment PIN_L25 -to HEXMEM0[4]
+set_location_assignment PIN_J22 -to HEXMEM0[5]
+set_location_assignment PIN_H22 -to HEXMEM0[6]
+set_location_assignment PIN_M24 -to HEXMEM1[0]
+set_location_assignment PIN_Y22 -to HEXMEM1[1]
+set_location_assignment PIN_W21 -to HEXMEM1[2]
+set_location_assignment PIN_W22 -to HEXMEM1[3]
+set_location_assignment PIN_W25 -to HEXMEM1[4]
+set_location_assignment PIN_U23 -to HEXMEM1[5]
+set_location_assignment PIN_U24 -to HEXMEM1[6]
+set_location_assignment PIN_AA25 -to HEXMEM2[0]
+set_location_assignment PIN_AA26 -to HEXMEM2[1]
+set_location_assignment PIN_Y25 -to HEXMEM2[2]
+set_location_assignment PIN_W26 -to HEXMEM2[3]
+set_location_assignment PIN_Y26 -to HEXMEM2[4]
+set_location_assignment PIN_W27 -to HEXMEM2[5]
+set_location_assignment PIN_W28 -to HEXMEM2[6]
+set_location_assignment PIN_V21 -to HEXMEM3[0]
+set_location_assignment PIN_U21 -to HEXMEM3[1]
+set_location_assignment PIN_AB20 -to HEXMEM3[2]
+set_location_assignment PIN_AA21 -to HEXMEM3[3]
+set_location_assignment PIN_AD24 -to HEXMEM3[4]
+set_location_assignment PIN_AF23 -to HEXMEM3[5]
+set_location_assignment PIN_Y19 -to HEXMEM3[6]
+set_location_assignment PIN_AD18 -to HEXREG1[0]
+set_location_assignment PIN_AC18 -to HEXREG1[1]
+set_location_assignment PIN_AB18 -to HEXREG1[2]
+set_location_assignment PIN_AH19 -to HEXREG1[3]
+set_location_assignment PIN_AG19 -to HEXREG1[4]
+set_location_assignment PIN_AF18 -to HEXREG1[5]
+set_location_assignment PIN_AH18 -to HEXREG1[6]
+set_location_assignment PIN_AD17 -to HEXREG2[0]
+set_location_assignment PIN_AE17 -to HEXREG2[1]
+set_location_assignment PIN_AG17 -to HEXREG2[2]
+set_location_assignment PIN_AH17 -to HEXREG2[3]
+set_location_assignment PIN_AF17 -to HEXREG2[4]
+set_location_assignment PIN_AG18 -to HEXREG2[5]
+set_location_assignment PIN_AA14 -to HEXREG2[6]
+set_location_assignment PIN_Y23 -to CLK
+set_location_assignment PIN_AC27 -to OP0
+set_location_assignment PIN_AD27 -to OP1
+set_global_assignment -name BSF_FILE debouncer.bsf
+set_global_assignment -name VERILOG_FILE debouncer.v
+set_global_assignment -name BDF_FILE registrador.bdf
+set_global_assignment -name BDF_FILE contador.bdf
+set_global_assignment -name BDF_FILE adder.bdf
+set_global_assignment -name BDF_FILE somasub.bdf
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name QIP_FILE rom.qip
+set_global_assignment -name BDF_FILE mux.bdf
+set_global_assignment -name BDF_FILE divisor.bdf
+set_global_assignment -name BDF_FILE multiplicador.bdf
+set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name QIP_FILE muxvec.qip
+set_global_assignment -name QIP_FILE muxvec2.qip
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_Y2 -to CLOCK_FPGA
+set_location_assignment PIN_AC28 -to RESET
+set_location_assignment PIN_AB28 -to CLEAR
+set_global_assignment -name BDF_FILE UC.bdf
+set_global_assignment -name QIP_FILE rom2.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

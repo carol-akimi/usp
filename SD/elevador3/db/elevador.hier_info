@@ -1,0 +1,37 @@
+|elevador
+clk => movimento[0]~reg0.CLK
+clk => movimento[1]~reg0.CLK
+clk => andar[0].CLK
+clk => andar[1].CLK
+clk => andar[2].CLK
+clk => andar[3].CLK
+clk => estado_novo~4.DATAIN
+clk => estado_atual~1.DATAIN
+reset => movimento[0]~reg0.ACLR
+reset => movimento[1]~reg0.ACLR
+reset => andar[0].ACLR
+reset => andar[1].ACLR
+reset => andar[2].ACLR
+reset => andar[3].ACLR
+reset => estado_novo~6.DATAIN
+reset => estado_atual~3.DATAIN
+novo[0] => Equal0.IN3
+novo[0] => LessThan0.IN4
+novo[0] => LessThan1.IN4
+novo[1] => Equal0.IN2
+novo[1] => LessThan0.IN3
+novo[1] => LessThan1.IN3
+novo[2] => Equal0.IN1
+novo[2] => LessThan0.IN2
+novo[2] => LessThan1.IN2
+novo[3] => Equal0.IN0
+novo[3] => LessThan0.IN1
+novo[3] => LessThan1.IN1
+atual[0] <= andar[0].DB_MAX_OUTPUT_PORT_TYPE
+atual[1] <= andar[1].DB_MAX_OUTPUT_PORT_TYPE
+atual[2] <= andar[2].DB_MAX_OUTPUT_PORT_TYPE
+atual[3] <= andar[3].DB_MAX_OUTPUT_PORT_TYPE
+movimento[0] <= movimento[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+movimento[1] <= movimento[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
